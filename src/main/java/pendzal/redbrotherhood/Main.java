@@ -4,6 +4,7 @@ import pendzal.redbrotherhood.Model.Person;
 
 import java.util.regex.Pattern;
 import com.google.gson.Gson;
+import pendzal.redbrotherhood.Model.User;
 
 
 import static spark.Spark.*;
@@ -23,8 +24,8 @@ public class Main {
 
 
 
-    get("/api/members", (req, res) -> Members.getMembers(), gson::toJson);
-    get("/api/members/:id", (req, res) -> {
+    get("/api/people", (req, res) -> People.getPeople(), gson::toJson);
+    get("/api/people/:id", (req, res) -> {
 
       String idString = req.params(":id");
       boolean isNumber = Pattern.matches("[0-9]+", idString);
@@ -32,9 +33,21 @@ public class Main {
       if (isNumber)
       {
         int id = Integer.parseInt(idString);
-        Person person = Members.getMember(id);
+        Person person = People.getPeople(id);
         if (person != null) return person;
       }
+
+      res.status(404);
+      return null;
+    }, gson::toJson);
+
+    get("/api/users", (req, res) -> Users.getUsers(), gson::toJson);
+    get("/api/users/:username", (req, res) -> {
+
+      String username = req.params(":username");
+
+      User user = Users.getUser(username);
+      if (user != null) return user;
 
       res.status(404);
       return null;

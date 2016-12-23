@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Class-Path: jetty-util-9.3.6.v20151106.jar slf4j-api-1.7.13.jar jetty-
- xml-9.3.6.v20151106.jar websocket-client-9.3.6.v20151106.jar websocke
- t-server-9.3.6.v20151106.jar jetty-http-9.3.6.v20151106.jar javax.ser
- vlet-api-3.1.0.jar gson-2.4.jar websocket-api-9.3.6.v20151106.jar jet
- ty-server-9.3.6.v20151106.jar spark-core-2.5.jar websocket-common-9.3
- .6.v20151106.jar jetty-servlet-9.3.6.v20151106.jar jetty-webapp-9.3.6
- .v20151106.jar jetty-security-9.3.6.v20151106.jar websocket-servlet-9
+Class-Path: websocket-server-9.3.6.v20151106.jar websocket-common-9.3.
+ 6.v20151106.jar websocket-api-9.3.6.v20151106.jar jetty-servlet-9.3.6
+ .v20151106.jar gson-2.4.jar jetty-server-9.3.6.v20151106.jar jetty-ht
+ tp-9.3.6.v20151106.jar websocket-client-9.3.6.v20151106.jar slf4j-api
+ -1.7.13.jar jetty-util-9.3.6.v20151106.jar jetty-webapp-9.3.6.v201511
+ 06.jar jetty-xml-9.3.6.v20151106.jar spark-core-2.5.jar websocket-ser
+ vlet-9.3.6.v20151106.jar javax.servlet-api-3.1.0.jar jetty-security-9
  .3.6.v20151106.jar jetty-io-9.3.6.v20151106.jar
 Main-Class: pendzal.redbrotherhood.Main
 
